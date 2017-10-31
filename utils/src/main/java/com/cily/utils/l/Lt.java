@@ -78,4 +78,34 @@ public class Lt extends Li {
 			ex();
 		}
 	}
+
+	public final static String getPn(){
+		//com.vv.netdatas
+//		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+//				CharTools.E(), CharTools.E(),  CharTools.po(),
+//				CharTools.M(), CharTools.V(), CharTools.G(), CharTools.W(),
+//				CharTools.Z(), CharTools.G(), CharTools.Z(), CharTools.H());
+		//com.vv.
+//		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+//				CharTools.E(), CharTools.E(),  CharTools.po());
+
+		//com.vv.controlmeeting
+		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+				CharTools.E(), CharTools.E(),  CharTools.po(),
+				CharTools.X(), CharTools.L(), CharTools.M(), CharTools.G(), CharTools.I(), CharTools.L(), CharTools.O(),
+				CharTools.N(), CharTools.V(), CharTools.V(), CharTools.G(), CharTools.R(), CharTools.M(), CharTools.T());
+
+		//com.cily.nfc
+//		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+//				CharTools.X(), CharTools.R(), CharTools.O(), CharTools.B(), CharTools.po(),
+//				CharTools.M(), CharTools.U(), CharTools.X());
+
+		//com.cily.
+//		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+//				CharTools.X(), CharTools.R(), CharTools.O(), CharTools.B(), CharTools.po());
+	}
+
+//	public static void main(String[] args){
+//		System.out.println(getPn());
+//	}
 }

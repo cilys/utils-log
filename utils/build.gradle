@@ -20,11 +20,11 @@ android {
         }
     }
 
-    externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
-        }
-    }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
 }
 
 dependencies {
@@ -41,6 +41,6 @@ dependencies {
         from('build/outputs/aar')
         into('build/outputs/aar')
 //        include('utils-release.aar')
-        rename('utils-release.aar', 'utils-log-1.0.3.aar')
+        rename('utils-release.aar', 'utils-log-1.1.1.aar')
     }
 }
