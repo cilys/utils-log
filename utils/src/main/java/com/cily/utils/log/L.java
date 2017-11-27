@@ -13,9 +13,8 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * user:cil
- * time:2017/2/23
- * desc:log工具
+ * @author cily
+ * @version 1.0.0   2017-01-23  log工具
  */
 public class L extends Logs {
 

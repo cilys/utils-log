@@ -10,9 +10,8 @@ import com.litesuits.orm.db.enums.AssignType;
 import java.io.Serializable;
 
 /**
- * user:cily
- * time:2017/6/15
- * desc:
+ * @author cily
+ * @version 1.0.0   2017-01-23  log对象
  */
 @Table("t_log")
 public class LogBean implements Serializable {

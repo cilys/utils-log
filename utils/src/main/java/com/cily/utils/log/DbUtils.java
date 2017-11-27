@@ -10,11 +10,9 @@ import java.io.File;
 import java.util.List;
 
 /**
- * user:cily
- * time:2017/6/15
- * desc:
+ * @author cily
+ * @version 1.0.0   2017-01-23  日志写数据库工具类
  */
-
 public class DbUtils {
     private static LiteOrm liteOrm;
     private static boolean saveLog = false;

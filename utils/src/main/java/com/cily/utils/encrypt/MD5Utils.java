@@ -4,11 +4,9 @@ import android.content.Context;
 
 
 /**
- * user:cily
- * time:2017/8/31
- * desc:
+ * @author cily
+ * @version 1.0.0   2017-01-23  http请求工具类
  */
-
 public class MD5Utils {
 //    static {
 //        try{

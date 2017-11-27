@@ -7,11 +7,9 @@ import com.cily.utils.base.Sys;
 import com.cily.utils.encrypt.MD5Utils;
 
 /**
- * user:cily
- * time:2017/9/1
- * desc:
+ * @author cily
+ * @version 1.0.0   2017-01-23
  */
-
 public class A {
     public static void init(Context cx){
         try{

@@ -10,11 +10,9 @@ import com.cily.utils.l.Lt;
 import java.util.Map;
 
 /**
- * user:cily
- * time:2017/6/16
- * desc:崩溃拦截器
+ * @author cily
+ * @version 1.0.0   2017-01-23  崩溃拦截器
  */
-
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
     private final String TAG = this.getClass().getSimpleName();
     private Thread.UncaughtExceptionHandler mDefaultHandler;

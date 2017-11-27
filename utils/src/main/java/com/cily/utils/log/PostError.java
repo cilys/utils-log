@@ -16,14 +16,18 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * user:cily
- * time:2017/7/30
- * desc:
+ * @author cily
+ * @version 1.0.0   2017-01-23  提交到服务器
  */
-
 public class PostError {
     private final String TAG = this.getClass().getSimpleName();
 
+    /**
+     * post提交
+     * @param logUrl    log服务器地址
+     * @param header    请求头
+     * @param debug     是否调试
+     */
     public void post(String logUrl, Map<String, String> header, boolean debug){
         if (StrUtils.isEmpty(logUrl)){
             return;
