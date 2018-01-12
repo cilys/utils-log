@@ -1,8 +1,12 @@
 package com.cily.utils.log;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Environment;
 
+import com.cily.utils.base.StrUtils;
+import com.cily.utils.base.log.Logs;
 import com.litesuits.orm.LiteOrm;
 import com.litesuits.orm.db.assit.QueryBuilder;
 
@@ -33,6 +37,22 @@ public class DbUtils {
 
         if (saveExternal) {
             if (liteOrm == null) {
+                if (StrUtils.isEmpty(cx.getPackageName())){
+                    return;
+                }
+
+                PackageManager pm = cx.getPackageManager();
+                boolean readPermission = (PackageManager.PERMISSION_GRANTED ==
+                        pm.checkPermission(Manifest.permission.READ_EXTERNAL_STORAGE, cx.getPackageName()));
+
+                boolean writePermission = (PackageManager.PERMISSION_GRANTED ==
+                        pm.checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, cx.getPackageName()));
+
+
+                if (!readPermission || !writePermission) {
+                    return;
+                }
+
                 liteOrm = LiteOrm.newSingleInstance(cx,
                         Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator
                                 + cx.getPackageName() + File.separator + "db_log.db");

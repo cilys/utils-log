@@ -18,4 +18,5 @@ public class MD5Utils {
 //
 //    public native String encrypt(String str);
 //    public static native int check(Context cx);
+
 }
