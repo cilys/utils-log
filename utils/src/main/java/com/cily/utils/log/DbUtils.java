@@ -80,7 +80,14 @@ public class DbUtils {
         if (!saveLog){
             return false;
         }
-        return b != null && liteOrm != null && liteOrm.insert(b) > -1;
+        try{
+            return b != null && liteOrm != null && liteOrm.insert(b) > -1;
+        }catch (Throwable e){
+            if (Logs.isConsoleLog()) {
+                e.printStackTrace();
+            }
+            return false;
+        }
     }
 
     public static boolean update(LogBean b){
@@ -88,7 +95,14 @@ public class DbUtils {
             return false;
         }
 
-        return b != null && liteOrm != null && liteOrm.update(b) > -1;
+        try {
+            return b != null && liteOrm != null && liteOrm.update(b) > -1;
+        }catch (Throwable e){
+            if (Logs.isConsoleLog()) {
+                e.printStackTrace();
+            }
+            return false;
+        }
     }
 
     public static boolean del(LogBean b){
@@ -96,17 +110,39 @@ public class DbUtils {
             return false;
         }
 
-        return b != null && liteOrm != null && liteOrm.delete(b) > -1;
+        try {
+            return b != null && liteOrm != null && liteOrm.delete(b) > -1;
+        }catch (Throwable e){
+            if (Logs.isConsoleLog()) {
+                e.printStackTrace();
+            }
+            return false;
+        }
+
     }
 
     public static List<LogBean> searchAll(){
-        return liteOrm == null ? null : liteOrm.query(LogBean.class);
+        try {
+            return liteOrm == null ? null : liteOrm.query(LogBean.class);
+        }catch (Throwable e){
+            if (Logs.isConsoleLog()) {
+                e.printStackTrace();
+            }
+            return null;
+        }
     }
 
     public static List<LogBean> search(int limit){
         if (limit < 1){
             return searchAll();
         }
-        return liteOrm == null ? null : liteOrm.query(new QueryBuilder<LogBean>(LogBean.class).limit(0, limit));
+        try {
+            return liteOrm == null ? null : liteOrm.query(new QueryBuilder<LogBean>(LogBean.class).limit(0, limit));
+        }catch (Throwable e){
+            if (Logs.isConsoleLog()) {
+                e.printStackTrace();
+            }
+            return null;
+        }
     }
 }
