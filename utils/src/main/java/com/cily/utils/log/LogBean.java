@@ -1,5 +1,6 @@
 package com.cily.utils.log;
 
+import com.cily.utils.base.UUIDUtils;
 import com.cily.utils.base.time.TimeUtils;
 import com.litesuits.orm.db.annotation.Column;
 import com.litesuits.orm.db.annotation.Default;
@@ -15,8 +16,8 @@ import java.io.Serializable;
  */
 @Table("t_log")
 public class LogBean implements Serializable {
-    @PrimaryKey(AssignType.AUTO_INCREMENT)
-    private int id;
+    @PrimaryKey(AssignType.BY_MYSELF)
+    private String id;
     private String appName;
     private String appSign;     //签名信息
     private String platform;
@@ -76,7 +77,7 @@ public class LogBean implements Serializable {
                    String logType, String tag, String logMsg,
                    String appVersion, String sysVersion, String imei,
                    String deviceBrand, String sysModel, String sysSDK) {
-
+        setId(UUIDUtils.getUUID());
 
         setAppName(appName);
         setAppSign(appSign);
@@ -94,11 +95,11 @@ public class LogBean implements Serializable {
         setSysSDK(sysSDK);
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

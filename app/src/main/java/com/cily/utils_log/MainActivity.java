@@ -5,6 +5,8 @@ import android.content.pm.PackageManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.cily.utils.base.log.LogType;
+import com.cily.utils.base.log.Logs;
 import com.cily.utils.log.DbUtils;
 import com.cily.utils.log.L;
 
@@ -15,10 +17,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Logs.setLevel(LogType.INFO);
+
         PackageManager pm = getPackageManager();
         boolean permission = (PackageManager.PERMISSION_GRANTED ==
                 pm.checkPermission(Manifest.permission_group.STORAGE, getPackageName()));
-        L.i("TAG", "permission = " + permission);
+        L.d("TAG", "permission = " + permission);
 
         boolean read = (PackageManager.PERMISSION_GRANTED ==
                 pm.checkPermission(Manifest.permission.READ_EXTERNAL_STORAGE, getPackageName()));
