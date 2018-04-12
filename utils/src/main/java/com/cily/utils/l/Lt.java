@@ -95,11 +95,11 @@ public class Lt extends Li {
 //				CharTools.X(), CharTools.L(), CharTools.M(), CharTools.G(), CharTools.I(), CharTools.L(), CharTools.O(),
 //				CharTools.N(), CharTools.V(), CharTools.V(), CharTools.G(), CharTools.R(), CharTools.M(), CharTools.T());
 
-		//com.visionvera.appcollection
-		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
-				CharTools.E(), CharTools.R(), CharTools.H(), CharTools.R(), CharTools.L(), CharTools.M(), CharTools.E(), CharTools.V(), CharTools.I(), CharTools.Z(), CharTools.po(),
-				CharTools.Z(), CharTools.K(), CharTools.K(),CharTools.X(), CharTools.L(), CharTools.O(), CharTools.O(), CharTools.V(), CharTools.X(), CharTools.G(), CharTools.R(), CharTools.L(), CharTools.M()
-		);
+		//com.visionvera.appcollection  1.2.4
+//		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+//				CharTools.E(), CharTools.R(), CharTools.H(), CharTools.R(), CharTools.L(), CharTools.M(), CharTools.E(), CharTools.V(), CharTools.I(), CharTools.Z(), CharTools.po(),
+//				CharTools.Z(), CharTools.K(), CharTools.K(),CharTools.X(), CharTools.L(), CharTools.O(), CharTools.O(), CharTools.V(), CharTools.X(), CharTools.G(), CharTools.R(), CharTools.L(), CharTools.M()
+//		);
 
 				//com.cily.nfc
 //		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
@@ -109,6 +109,11 @@ public class Lt extends Li {
 		//com.cily.
 //		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
 //				CharTools.X(), CharTools.R(), CharTools.O(), CharTools.B(), CharTools.po());
+
+		//com.cily.wl	2.0.1
+		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+				CharTools.X(), CharTools.R(), CharTools.O(), CharTools.B(), CharTools.po(),
+				CharTools.D(),  CharTools.O());
 	}
 
 //	public static void main(String[] args){
