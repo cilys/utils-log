@@ -34,3 +34,19 @@
 -keep class com.cily.utils.encrypt{
     public *;
 }
+
+-keep class com.cily.utils.logFile.file.WriteFileRunnable{
+    *;
+}
+-keep class com.cily.utils.logFile.file.WriteLogFileRunnable{
+    *;
+}
+-keep class com.cily.utils.logFile.queue.LogQueue{
+    *;
+}
+-keep class com.cily.utils.logFile.task.WriteFileThreadPool{
+    *;
+}
+-keep class com.cily.utils.logFile.Output{
+    *;
+}

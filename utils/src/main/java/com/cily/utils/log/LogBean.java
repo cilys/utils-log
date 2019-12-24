@@ -185,4 +185,29 @@ public class LogBean implements Serializable {
     public void setErrorTime(String errorTime) {
         this.errorTime = errorTime;
     }
+
+    public String out(){
+        return "【" + errorTime + "】" + logMsg;
+    }
+
+    @Override
+    public String toString() {
+        return "LogBean{" +
+                "id='" + id + '\'' +
+                ", appName='" + appName + '\'' +
+                ", appSign='" + appSign + '\'' +
+                ", platform='" + platform + '\'' +
+                ", logType='" + logType + '\'' +
+                ", tag='" + tag + '\'' +
+                ", logMsg='" + logMsg + '\'' +
+                ", errorTime='" + errorTime + '\'' +
+                ", appVersion='" + appVersion + '\'' +
+                ", sysVersion='" + sysVersion + '\'' +
+                ", imei='" + imei + '\'' +
+                ", deviceBrand='" + deviceBrand + '\'' +
+                ", sysModel='" + sysModel + '\'' +
+                ", sysSDK='" + sysSDK + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }

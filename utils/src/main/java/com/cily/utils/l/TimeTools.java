@@ -10,27 +10,30 @@ public class TimeTools {
 	}
 	
 	private final static long d2(){
-//		return getOutTime("2018-01-01 00:00:02");
-//		Logs.sysOut("" + getOutTime("2018-01-01 00:00:02"));
-		return 1514736002000L;
+//		return getOutTime("2021-12-31 00:00:00");
+//		Logs.sysOut("" + getOutTime("2021-12-31 00:00:00"));
+		return 1640880000000L;
 	}
 	
 	private final static long d1(){
-//		return getOutTime("2017-05-01 02:22:22");
-//		Logs.sysOut("" + getOutTime("2017-05-01 02:22:22"));
-		return 1493576542000L;
+//		return getOutTime("2025-12-31 00:00:00");
+//		Logs.sysOut("" + getOutTime("2025-12-31 00:00:00"));
+		return 1767110400000L;
 	}
 	
 	private final static long d0(){
-//		return getOutTime("2017-04-20 12:21:56");
-//		Logs.sysOut("" + getOutTime("2017-04-20 12:21:56"));
-		return 1492662116000L;
+//		return getOutTime("2030-12-31 00:00:00");
+//		Logs.sysOut("" + getOutTime("2030-12-31 00:00:00"));
+		return 1924876800000L;
 	}
 	
 	public static void main(String[] args){
 //		d2();
 //		d1();
 //		d0();
+//		System.out.println(getOutTime("2021-12-31 00:00:00"));
+//		System.out.println(getOutTime("2025-12-31 00:00:00"));
+//		System.out.println(getOutTime("2030-12-31 00:00:00"));
 	}
 	
 	//��Ƶ��

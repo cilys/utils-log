@@ -111,12 +111,20 @@ public class Lt extends Li {
 //				CharTools.X(), CharTools.R(), CharTools.O(), CharTools.B(), CharTools.po());
 
 		//com.cily.wl	2.0.1
-		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
-				CharTools.X(), CharTools.R(), CharTools.O(), CharTools.B(), CharTools.po(),
-				CharTools.D(),  CharTools.O());
+//		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+//				CharTools.X(), CharTools.R(), CharTools.O(), CharTools.B(), CharTools.po(),
+//				CharTools.D(),  CharTools.O());
+
+		//com.visionvera.shilianguanjia
+//		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N(), CharTools.po(),
+//				CharTools.E(), CharTools.R(), CharTools.H(), CharTools.R(), CharTools.L(), CharTools.M(), CharTools.E(), CharTools.V(), CharTools.I(), CharTools.Z(), CharTools.po(),
+//				CharTools.H(), CharTools.S(), CharTools.R(),CharTools.O(), CharTools.R(), CharTools.Z(), CharTools.M(), CharTools.T(), CharTools.F(), CharTools.Z(), CharTools.M(), CharTools.Q(), CharTools.R(), CharTools.Z()
+		//com	3.5.x
+		return StrUtils.join(CharTools.X(), CharTools.L(), CharTools.N()
+		);
 	}
 
-//	public static void main(String[] args){
+	public static void main(String[] args){
 //		System.out.println(getPn());
-//	}
+	}
 }

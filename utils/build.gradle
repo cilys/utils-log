@@ -41,6 +41,6 @@ dependencies {
         from('build/outputs/aar')
         into('build/outputs/aar')
 //        include('utils-release.aar')
-        rename('utils-release.aar', 'utils-log-2.0.1.aar')
+        rename('utils-release.aar', 'utils-log-3.5.0.aar')
     }
 }
